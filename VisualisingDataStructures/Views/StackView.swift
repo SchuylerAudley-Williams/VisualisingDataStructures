@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct StackView: View {
+    var stack = Stack()
+    @State private var topOfStack: Int = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: "\(topOfStack).circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Button("Peek", action: {
+                topOfStack = stack.peek()
+            })
+            Button("Push", action: {
+                stack.push(itemToPush: Int.random(in: 0...49))
+            })
+            Button("Pop", action: {
+                stack.pop()
+            })
+        }
     }
 }
 

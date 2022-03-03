@@ -9,7 +9,10 @@ import SwiftUI
 
 struct LinkedListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button("Add", action: {print("TODO")})
+            Button("Delete", action: {print("TODO")})
+        }
     }
 }
 

@@ -12,7 +12,18 @@ struct RootTabView: View {
         TabView {
             StackView()
                 .tabItem() {
-                    Text(Stack)
+                    Image(systemName: "square.stack")
+                    Text("Stack")
+                }
+            QueueView()
+                .tabItem() {
+                    Image(systemName: "person.3.sequence")
+                    Text("Queue")
+                }
+            LinkedListView()
+                .tabItem() {
+                    Image(systemName: "link")
+                    Text("Linked List")
                 }
         }
     }

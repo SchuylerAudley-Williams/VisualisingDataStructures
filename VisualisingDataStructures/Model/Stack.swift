@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Stack {
-    var data: [Int] = []
+class Stack: NSObject, Codable {
+    var data: [Int] = [1]
     
     func push(itemToPush: Int) {
         data.insert(itemToPush, at: 0)
@@ -21,6 +21,10 @@ class Stack {
     }
     
     func peek() -> Int {
-        return data[0]
+        if data.count != 0 {
+            return data[0]
+        } else {
+            return 0
+        }
     }
 }
