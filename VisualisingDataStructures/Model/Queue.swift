@@ -8,5 +8,13 @@
 import Foundation
 
 class Queue {
+    var items: [Int] = []
     
+    func enqueue(newElement: Int) {
+        items.append(newElement)
+    }
+    
+    func dequeue() -> Int {
+        return items.removeFirst()
+    }
 }
