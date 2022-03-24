@@ -21,8 +21,4 @@ class Queue: ObservableObject {
             print("No more items in queue")
         }
     }
-    
-    func displayItems() -> [Int] {
-        return items
-    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA7A09627ECA0E0004B258E /* HorizontalQueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7A09527ECA0E0004B258E /* HorizontalQueueView.swift */; };
 		3BA9B36927D0E3CC00C73A56 /* VisualisingDataStructuresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA9B36827D0E3CC00C73A56 /* VisualisingDataStructuresApp.swift */; };
 		3BA9B36B27D0E3CC00C73A56 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA9B36A27D0E3CC00C73A56 /* RootTabView.swift */; };
 		3BA9B36D27D0E3CE00C73A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA9B36C27D0E3CE00C73A56 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BA7A09527ECA0E0004B258E /* HorizontalQueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalQueueView.swift; sourceTree = "<group>"; };
 		3BA9B36527D0E3CC00C73A56 /* VisualisingDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualisingDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA9B36827D0E3CC00C73A56 /* VisualisingDataStructuresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresApp.swift; sourceTree = "<group>"; };
 		3BA9B36A27D0E3CC00C73A56 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				3BA9B36A27D0E3CC00C73A56 /* RootTabView.swift */,
 				3BA9B39627D0E83B00C73A56 /* StackView.swift */,
 				3BA9B39827D0E84700C73A56 /* QueueView.swift */,
+				3BA7A09527ECA0E0004B258E /* HorizontalQueueView.swift */,
 				3BA9B39B27D0E86100C73A56 /* LinkedListView.swift */,
 			);
 			path = Views;
@@ -298,6 +301,7 @@
 				3BA9B39927D0E84700C73A56 /* QueueView.swift in Sources */,
 				3BA9B39727D0E83B00C73A56 /* StackView.swift in Sources */,
 				3BA9B3A027D0F19200C73A56 /* LinkedList.swift in Sources */,
+				3BA7A09627ECA0E0004B258E /* HorizontalQueueView.swift in Sources */,
 				3BA9B39C27D0E86100C73A56 /* LinkedListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

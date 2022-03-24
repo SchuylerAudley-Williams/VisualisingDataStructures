@@ -25,7 +25,7 @@ struct StackView: View {
             Button("Pop", action: {
                 stack.pop()
             })
-            List(stack.data, id: \.self) {
+            List(stack.displayData(), id: \.self) {
                 Text(String($0))
             }
         }

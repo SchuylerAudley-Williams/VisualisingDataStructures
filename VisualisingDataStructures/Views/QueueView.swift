@@ -12,11 +12,11 @@ struct QueueView: View {
     
     var body: some View {
         VStack {
-            List(queue.displayItems(), id: \.self) {
+            List(queue.items, id: \.self) {
                 Text(String($0))
             }
             Button("Enqueue", action: {queue.enqueue(newElement: Int.random(in: 0...49))})
-            Button("Delete", action: {queue.dequeue()})
+            Button("Dequeue", action: {queue.dequeue()})
         }
     }
 }
