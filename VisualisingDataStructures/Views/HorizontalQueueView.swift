@@ -15,6 +15,8 @@ struct HorizontalQueueView: View {
             ForEach(queue.items, id: \.self) {
                 Text(String($0))
             }
+            Button("Enqueue", action: {queue.enqueue(newElement: Int.random(in: 0...49))})
+            Button("Dequeue", action: {queue.dequeue()})
         }
     }
 }
