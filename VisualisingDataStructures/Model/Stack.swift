@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Stack: NSObject, Codable {
+class Stack: NSObject, Codable, ObservableObject {
     var data: [Int] = [1]
     
     func push(itemToPush: Int) {
@@ -26,5 +26,9 @@ class Stack: NSObject, Codable {
         } else {
             return 0
         }
+    }
+    
+    func displayData() -> [Int] {
+        return data
     }
 }

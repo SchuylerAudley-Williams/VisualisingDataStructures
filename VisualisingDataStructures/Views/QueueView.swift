@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct QueueView: View {
+    @StateObject var queue = Queue()
+    
     var body: some View {
         VStack {
-            Button("Add", action: {print("TODO")})
-            Button("Delete", action: {print("TODO")})
+            List(queue.displayItems(), id: \.self) {
+                Text(String($0))
+            }
+            Button("Enqueue", action: {queue.enqueue(newElement: Int.random(in: 0...49))})
+            Button("Delete", action: {queue.dequeue()})
         }
     }
 }

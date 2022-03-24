@@ -7,14 +7,22 @@
 
 import Foundation
 
-class Queue {
-    var items: [Int] = []
+class Queue: ObservableObject {
+    @Published var items: [Int] = [2]
     
     func enqueue(newElement: Int) {
         items.append(newElement)
     }
     
-    func dequeue() -> Int {
-        return items.removeFirst()
+    func dequeue(){
+        if items.count != 0 {
+            items.removeFirst()
+        } else {
+            print("No more items in queue")
+        }
+    }
+    
+    func displayItems() -> [Int] {
+        return items
     }
 }

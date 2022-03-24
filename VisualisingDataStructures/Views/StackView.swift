@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StackView: View {
-    var stack = Stack()
+    @StateObject var stack = Stack()
     @State private var topOfStack: Int = 0
     
     var body: some View {
@@ -25,6 +25,9 @@ struct StackView: View {
             Button("Pop", action: {
                 stack.pop()
             })
+            List(stack.data, id: \.self) {
+                Text(String($0))
+            }
         }
     }
 }
